@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos do Scratch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+        ''
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1; /* Cor de fundo mais clara */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #ff6f20; /* Laranja do Scratch */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 80px; /* Ajuste o tamanho do logo conforme necessário */
+            margin-right: 30px; /* Espaçamento entre o logo e o título */
+        }
+
+        h1 {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .game {
+            background-color: #e0f7fa; /* Azul suave */
+            border: 2px solid #669bbc; /* Borda laranja */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: calc(30% - 30px);
+            text-align: center;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .game:hover {
+            transform: scale(1.05);
+        }
+
+        .game h2 {
+            font-size: 1.5em;
+            color: #ff6f20; /* Título laranja */
+        }
+
+        .game p {
+            margin: 10px 0;
+            color: #555; /* Cor de texto mais escura */
+        }
+
+        .game img {
+            width: 100%; /* Ajuste para que a imagem ocupe toda a largura do container */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 4px; /* Bordas arredondadas nas imagens */
+            margin-bottom: 10px; /* Espaço abaixo da imagem */
+        }
+
+        .game a {
+            color: #ff6f20; /* Link laranja */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6f20; /* Laranja do Scratch */
+            color: white;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 900px) {
+            .game {
+                width: calc(45% - 30px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .game {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="https://juniortech.org/wp-content/uploads/2020/09/Scratch-cat-logo-300x300px.png" alt="Logo do Scratch">
+        <h1>Jogos do Scratch desenvolvido para FETEC</h1>
+
+    </header>
+
+    <main>
+
+        <div class="game-container">
+            <div class="game" id="game1">
+                <h2>Minecraft</h2>
+                <img src="imagens/Captura de tela 2024-09-27 161234.png" alt="Minecraft">
+                 <p></p>  <!--descriçao do jogo -->
+                <a href="https://scratch.mit.edu/projects/1066994031/?classId=f2e3cace-8019-49b3-a1bb-cdb5a3668ae6&assignmentId=74b4b621-2c87-43ba-9a26-264a12e5decd&submissionId=cda18f56-2a41-8362-bd28-4eb8295af482" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game2">
+                <h2>Tetris</h2>
+                <img src="imagens/Captura de tela 2024-09-27 161255.png" alt="Tetris">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1071804496?classId=f2e3cace-8019-49b3-a1bb-cdb5a3668ae6&assignmentId=74b4b621-2c87-43ba-9a26-264a12e5decd&submissionId=4bd05641-587f-12ff-cf8e-78b145858535" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game3">
+                <h2>Sonic e Mario</h2>
+                <img src="imagens/Captura de tela 2024-09-27 161310.png" alt="Jogo 3">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1070685533?classId=f2e3cace-8019-49b3-a1bb-cdb5a3668ae6&assignmentId=74b4b621-2c87-43ba-9a26-264a12e5decd&submissionId=fd37a35a-9650-897c-e969-cb2cbe45fb4e" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game4">
+                <h2>Pivot</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160414.png" alt="Jogo 4">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1066982033/?classId=f2e3cace-8019-49b3-a1bb-cdb5a3668ae6&assignmentId=74b4b621-2c87-43ba-9a26-264a12e5decd&submissionId=7c21ff92-7caf-0064-4732-9c53fe9d49cb" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game5">
+                <h2>Gênio quis</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160439.png" alt="Jogo 5">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1070681588?classId=f2e3cace-8019-49b3-a1bb-cdb5a3668ae6&assignmentId=74b4b621-2c87-43ba-9a26-264a12e5decd&submissionId=075bb095-dfa7-231b-ab3f-7031308f337f" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game6">
+                <h2>Pokemon</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160538.png" alt="Jogo 6">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1070193438?classId=f2e3cace-8019-49b3-a1bb-cdb5a3668ae6&assignmentId=74b4b621-2c87-43ba-9a26-264a12e5decd&submissionId=dfcec785-cc65-e2ec-ea11-b8a36d2ad8c6" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game7">
+                <h2>Angry birds</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160608.png" alt="Jogo 7">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1064392867/?classId=f2e3cace-8019-49b3-a1bb-cdb5a3668ae6&assignmentId=74b4b621-2c87-43ba-9a26-264a12e5decd&submissionId=87cc0e57-91bd-629b-004c-13144373a142" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game8">
+                <h2>Super minecraft</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160630.png" alt="Jogo 8">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1071826286/?classId=f2e3cace-8019-49b3-a1bb-cdb5a3668ae6&assignmentId=74b4b621-2c87-43ba-9a26-264a12e5decd&submissionId=a099557f-5c3b-1bb9-ab27-7d3095580998" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game9">
+                <h2>GHETTO HEROES</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160702.png" alt="Jogo 9">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1070293458?classId=c6af9f25-f24a-40c1-a965-c255e58e8c64&assignmentId=59d37ffc-6c7d-4c2e-8071-3ab15ed3e15e&submissionId=7949966a-54e1-e118-ee6a-ca419f196fb8" target="_blank">Abrir Jogo</a>
+            </div>
+            
+            <div class="game" id="game10">
+                <h2>Remix ETEC</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160730.png" alt="Jogo 10">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1073390686?classId=c6af9f25-f24a-40c1-a965-c255e58e8c64&assignmentId=59d37ffc-6c7d-4c2e-8071-3ab15ed3e15e&submissionId=67aeaefa-ca7f-7bb3-21c4-c52982d772f1" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game11">
+                <h2>Zumbis famintos</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160747.png" alt="Jogo 11">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1067544239?classId=c6af9f25-f24a-40c1-a965-c255e58e8c64&assignmentId=59d37ffc-6c7d-4c2e-8071-3ab15ed3e15e&submissionId=80dbaa6d-7a17-3e67-7f30-c48e551f241b" target="_blank">Abrir Jogo</a>
+                </div>
+
+            <div class="game" id="game12">
+                <h2>Spongebob Flight.</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160818.png" alt="">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1073877425?classId=c6af9f25-f24a-40c1-a965-c255e58e8c64&assignmentId=59d37ffc-6c7d-4c2e-8071-3ab15ed3e15e&submissionId=64490f97-7050-1110-4426-14903eb9294f" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game13">
+                <h2>Water sort remix</h2>
+                <img src="imagens/Captura de tela 2024-09-30 155634.png" alt="">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1067484457?classId=c6af9f25-f24a-40c1-a965-c255e58e8c64&assignmentId=59d37ffc-6c7d-4c2e-8071-3ab15ed3e15e&submissionId=73a1e9b4-bd2e-72a2-4edb-7ebae0e633c9" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game14">
+                <h2>Mortal kombat</h2>
+                <img src="imagens/Captura de tela 2024-09-27 160904.png" alt="">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1070549007?classId=c6af9f25-f24a-40c1-a965-c255e58e8c64&assignmentId=59d37ffc-6c7d-4c2e-8071-3ab15ed3e15e&submissionId=ae7bfa39-6557-3cff-5458-cd411df41227" target="_blank">Abrir Jogo</a>
+            </div>
+
+            <div class="game" id="game15">  
+                <h2>Jogo 15</h2>
+                <img src="imagens/Captura de tela 2024-09-30 155449.png" alt="">
+                <p></p>
+                <a href="https://scratch.mit.edu/projects/1067830709/fullscreen/" target="_blank">Abrir Jogo</a>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 todos os direitos reservados</p>
+        <p>Desenvolvido por: 1°, 2°, 3°, ano do ensino médio</p>
+        <p>Etec Darcy Pereira de Moraes</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/etecdarcypereira/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/etecdpmitapetininga/?locale=pt_BR" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.google.com.br/maps/place/Etec+Darcy+Pereira+de+Moraes/@-23.627454,-48.0448651,17z/data=!4m6!3m5!1s0x94c5cba99a9f4e91:0xc97bceb3a2e1cc0d!8m2!3d-23.6274589!4d-48.0422902!16s%2Fg%2F></i></a>
